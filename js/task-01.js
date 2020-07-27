@@ -1,11 +1,8 @@
 "use strict";
 
-let numb = 1;
-
 const logItems = function (items) {
-  for (const item of items) {
-    console.log(`${numb} - ${item}`);
-    numb += 1;
+  for (let i = 0; i < items.length; i += 1) {
+    console.log(`${1 + i} - ${items[i]}`);
   }
 };
 
