@@ -1,16 +1,8 @@
 "use strict";
 
 const formatString = function (string) {
-  if (string.length <= 40) {
-    return string;
-  } else {
-    string.slice(1, 41);
-    return `${string} ...`;
-  }
+  return string.length <= 40 ? string : `${string.slice(1, 41)}...`;
 };
-// const formatString = function (string) {
-//   string.length <= 40 ? `${string}` : `${string.slice(1, 41)} ...`;
-// };
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.

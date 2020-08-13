@@ -13,8 +13,11 @@ do {
       continue;
     }
     numbers.push(input);
-    total += +input;
   }
 } while (input !== null);
+if (numbers.length)
+  for (let number of numbers) {
+    total += +number;
+  }
 
 console.log(total);

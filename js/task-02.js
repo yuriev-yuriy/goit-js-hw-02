@@ -1,16 +1,7 @@
 "use strict";
 
-// const calculateEngravingPrice = function (message, pricePerWord) {
-//   const words = message.split(" ");
-//   const length = words.length;
-//   const price = length * pricePerWord;
-//   return price;
-// };
-
 const calculateEngravingPrice = function (message, pricePerWord) {
-  return message(length.split(" ")) * pricePerWord;
-
-  // return;
+  return message.split(" ").length * pricePerWord;
 };
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
